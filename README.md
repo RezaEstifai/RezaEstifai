@@ -2,7 +2,7 @@
 
 **`software developer, Database Developer`**
 
-I'm a Python enthusiast with a passion for crafting intelligent systems and dynamic web applications. I specialize in computer vision and machine learning, building projects from the ground up that can interpret and process visual data to solve real-world problems. As a web-app developer, I handle everything from planning and design to deploying user-friendly applications. My experience also includes elementary database management, which I use to organize and optimize data within my projects. I'm constantly exploring new ways to push the boundaries of what I can create and contribute to the tech world.
+I'm a Python enthusiast with a passion for crafting intelligent systems and dynamic web applications. I specialize in computer vision and machine learning, building projects from the ground up that can interpret and process visual data to solve real-world problems. As a web-app developer, I handle everything from planning and design to deploying user-friendly applications. My experience also includes intermediate database management, which I use to organize and optimize data within my projects. I'm constantly exploring new ways to push the boundaries of what I can create and contribute to the tech world.
 
    <p align="left">
       <a href="https://www.youtube.com/c/fknight?sub_confirmation=1">
