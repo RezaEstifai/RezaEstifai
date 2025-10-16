@@ -1,32 +1,16 @@
-name: WakaTime Daily Stats
+name: Waka Readme
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'   # ✅ every 5 minutes
-  workflow_dispatch:        # manual run button
-
-permissions:
-  contents: write
-
-concurrency:
-  group: waka-readme
-  cancel-in-progress: true
+    # Runs every 2 hours
+    - cron: "0 */2 * * *"
 
 jobs:
   update-readme:
+    name: Update this repo's README
     runs-on: ubuntu-latest
     steps:
       - uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          TIME_RANGE: "last_7_days"            # ✅ last_7_days
-          SHOW_TITLE: "false"            # we'll add our own title in README
-          SECTION_NAME: "waka"           # must match README tags below
-          BLOCKS: "█▇▆▅▄▃▂▁░"
-          CODE_LANG: "txt"
-          LANG_COUNT: "5"
-          SHOW_TIME: "true"
-          SHOW_TOTAL: "true"
-          STOP_AT_OTHER: "false"
-          SHOW_MASKED_TIME: "false"
-          COMMIT_MESSAGE: "Update WakaTime stats (Today)"
