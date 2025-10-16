@@ -2,8 +2,8 @@ name: WakaTime Daily Stats
 
 on:
   schedule:
-    - cron: '*/5 * * * *'   # Runs every 5 minutes (minimum GitHub allows)
-  workflow_dispatch:
+    - cron: '*/5 * * * *'   # ✅ every 5 minutes
+  workflow_dispatch:        # manual run button
 
 permissions:
   contents: write
@@ -19,14 +19,14 @@ jobs:
       - uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          SHOW_TITLE: "true"             # Show "📊 WakaTime Stats"
-          SECTION_NAME: "waka"           # Section name in README
-          BLOCKS: "█▇▆▅▄▃▂▁░"            # Nicer progress bars
-          CODE_LANG: "txt"               # Code style
-          TIME_RANGE: "today"            # ✅ ONLY TODAY
-          LANG_COUNT: "5"                # Top 5 languages
-          SHOW_TIME: "true"              # Show duration (e.g., 24 mins)
-          SHOW_TOTAL: "true"             # ✅ Show total for TODAY
-          SHOW_MASKED_TIME: "false"
+          TIME_RANGE: "today"            # ✅ today only
+          SHOW_TITLE: "false"            # we'll add our own title in README
+          SECTION_NAME: "waka"           # must match README tags below
+          BLOCKS: "█▇▆▅▄▃▂▁░"
+          CODE_LANG: "txt"
+          LANG_COUNT: "5"
+          SHOW_TIME: "true"
+          SHOW_TOTAL: "true"
           STOP_AT_OTHER: "false"
+          SHOW_MASKED_TIME: "false"
           COMMIT_MESSAGE: "Update WakaTime stats (Today)"
