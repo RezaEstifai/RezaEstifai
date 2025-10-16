@@ -7,3 +7,5 @@ I'm a Python enthusiast with a passion for crafting intelligent systems and dyna
 [<img src="https://custom-icon-badges.demolab.com/badge/-Subscribe%20For%20More-red?style=for-the-badge&logo=video&logoColor=white"/>](https://www.youtube.com/channel/UCrL2H1DpvI2qPYK6rhS6mEw)
 ### 📊 This week I spent my time on:
 
+<!--START_SECTION:waka-->
+<!--END_SECTION:waka-->
