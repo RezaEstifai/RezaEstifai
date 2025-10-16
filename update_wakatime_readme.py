@@ -117,7 +117,8 @@ def main():
 
     branch = get_env("BRANCH", "main")
     readme_path = get_env("README_PATH", "README.md")
-    time_range = get_env("TIME_RANGE", "today")
+    time_range = get_env("TIME_RANGE", "last_7_days")
+
     dry_run = str(get_env("DRY_RUN", "0")).lower() in ("1", "true", "yes")
 
     print(f"Fetching WakaTime data for {time_range}...")
