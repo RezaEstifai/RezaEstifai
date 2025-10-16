@@ -8,4 +8,6 @@ I'm a Python enthusiast with a passion for crafting intelligent systems and dyna
 
 ### 📊 This week I spent my time on:
 <!--START_SECTION:waka-->
+
+
 <!--END_SECTION:waka-->
