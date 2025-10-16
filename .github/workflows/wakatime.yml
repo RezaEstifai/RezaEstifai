@@ -19,7 +19,7 @@ jobs:
       - uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          TIME_RANGE: "today"            # ✅ today only
+          TIME_RANGE: "last_7_days"            # ✅ last_7_days
           SHOW_TITLE: "false"            # we'll add our own title in README
           SECTION_NAME: "waka"           # must match README tags below
           BLOCKS: "█▇▆▅▄▃▂▁░"
