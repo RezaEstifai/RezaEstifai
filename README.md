@@ -8,4 +8,11 @@ I'm a Python enthusiast with a passion for crafting intelligent systems and dyna
 
 ### 📊 This week I spent my time on:
 <!--START_SECTION:waka-->
+
+```txt
+Total Time: 0 secs
+
+No activity tracked
+```
+
 <!--END_SECTION:waka-->
