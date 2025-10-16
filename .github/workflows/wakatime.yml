@@ -1,12 +1,12 @@
 name: WakaTime Weekly Stats
 
-permissions:
-  contents: write
-
 on:
   schedule:
-    - cron: '0 0 * * *' # every day at 00:00 UTC
+    - cron: '0 0 * * *'  # Runs every day at 00:00 UTC
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   update-readme:
@@ -15,3 +15,14 @@ jobs:
       - uses: athul/waka-readme@master
         with:
           WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
+          SHOW_TITLE: "true"            # Show "📊 WakaTime Stats"
+          SECTION_NAME: "waka"          # Name of the section in README
+          BLOCKS: "█▇▆▅▄▃▂▁░"           # Prettier bar characters
+          CODE_LANG: "txt"              # Code block language
+          TIME_RANGE: "last_7_days"     # Options: last_7_days, last_30_days, all_time
+          LANG_COUNT: "5"               # Show top 5 languages
+          SHOW_TIME: "true"             # Show time (e.g. 3 hrs 20 mins)
+          SHOW_TOTAL: "true"            # Show total coding time at bottom
+          SHOW_MASKED_TIME: "false"     # If true → masks exact time
+          STOP_AT_OTHER: "false"        # If true → stops listing after "Other"
+          COMMIT_MESSAGE: "Update WakaTime stats"
