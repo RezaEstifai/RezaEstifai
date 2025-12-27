@@ -10,8 +10,9 @@ I'm a Python enthusiast with a passion for crafting intelligent systems and dyna
 <!--START_SECTION:waka-->
 
 ```txt
-Java   21 mins         ████████████████████████░   96.66 %
-CSV    0 secs          █░░░░░░░░░░░░░░░░░░░░░░░░   03.34 %
+Java       28 mins         █████████████████░░░░░░░░   68.58 %
+Markdown   12 mins         ███████▒░░░░░░░░░░░░░░░░░   29.65 %
+CSV        0 secs          ▒░░░░░░░░░░░░░░░░░░░░░░░░   01.77 %
 ```
 
 <!--END_SECTION:waka-->
